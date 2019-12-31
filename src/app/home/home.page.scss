@@ -1,0 +1,84 @@
+
+
+
+               
+ion-grid{
+  margin-left: auto;
+margin-bottom: auto;
+margin-top: 10%;
+margin-right: 70%;
+}
+page-home {
+  .toolbar-content p {
+      margin-left: 10px;
+  }
+}
+.button1{
+  background-image: url('/assets/Untitled_A0_Rectangle_9_pattern.png');
+background-repeat: no-repeat;background-size: cover;
+
+transform: rotate(90deg);
+margin-left: 40%;
+margin-bottom: auto;
+margin-top: auto;
+margin-right: auto;
+}
+
+.button2{
+  background-image: url('/assets/Untitled_A0_Rectangle_9_pattern.png');
+background-repeat: no-repeat;background-size: cover;
+transform: rotate(90deg);
+margin-left:-60%;
+margin-bottom: auto;
+margin-top: auto;
+margin-right: auto;
+}
+
+.button3{
+  background-image: url('/assets/Untitled_A0_Rectangle_9_pattern.png');
+background-repeat: no-repeat;background-size: cover;
+transform: rotate(90deg);
+margin-left: 120%;
+margin-top: -90%;
+margin-bottom: auto;
+margin-right: auto;
+
+}
+
+.button4{
+  background-image: url('/assets/Untitled_A0_Rectangle_9_pattern.png');
+background-repeat: no-repeat;background-size: cover;
+transform: rotate(90deg);
+margin-left: 30%;
+margin-bottom: auto;
+margin-top: auto;
+margin-right: auto;
+
+}
+.button5{
+background-image: url('/assets/Untitled_A0_Rectangle_9_pattern.png');
+background-repeat: no-repeat;background-size: cover;
+transform: rotate(90deg);
+margin-left: 30%;
+margin-bottom: auto;
+margin-top: 500%;
+margin-right: auto;
+
+}
+.fab{
+
+transform: rotate(180deg);
+
+
+}
+/* @media only screen and (orientation: landscape) {
+  body {
+      background: url('/assets/Android Mobile – 1.png')0 0/100% 100%  no-repeat; transform: rotate(90deg);
+  }
+
+} 
+@media only screen and (orientation: portrait) {
+  body {
+      background: url('/assets/Android Mobile – 1.png')0 0/100% 100%  no-repeat; transform: rotate(180deg);
+  }
+}*/

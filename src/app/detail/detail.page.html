@@ -1,0 +1,53 @@
+
+<body fixed>
+
+</body>
+
+<ion-header color="0">
+  <ion-toolbar>
+    <ion-title>{{ peripheral.name || 'Device' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="padding" color="0" >
+
+  <ion-item>
+    <ion-label>Light</ion-label>
+    <ion-toggle [(ngModel)]="power" (ionChange)="onPowerSwitchChange($event);"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>Sound</ion-label>
+    <ion-toggle [(ngModel)]="power2" (ionChange)="onPowerSwitchChange2($event);"></ion-toggle>
+  </ion-item>
+
+
+  <ion-item >
+
+    <ion-badge item-end color="secondary">{{brightness}}</ion-badge>
+    <ion-range min="10" max="100" debounce="30" step="10" [(ngModel)]="brightness" (ionChange)="setBrightness($event)">
+    </ion-range>
+  </ion-item>
+  <ion-item >
+
+    <ion-fab-button class="button1" color="0"(touchstart)="onPowerSwitchChangeIII(9)" (touchend)="stop()" ><ion-icon name="md-volume-mute"></ion-icon></ion-fab-button>
+
+  </ion-item>
+
+  
+
+</ion-content>
+
+
+
+
+<ion-grid >
+  <ion-fab-button class="button1" color="0"(touchstart)="onPowerSwitchChangeIII(1)" (touchend)="stop()" ><ion-icon name="md-arrow-round-up"></ion-icon></ion-fab-button>
+  <ion-fab-button class="button2" color="0"(touchstart)="onPowerSwitchChangeIII(5)" (touchend)="stop()"><ion-icon name="md-arrow-round-back"></ion-icon></ion-fab-button>
+  <ion-fab-button class="button3" color="0"(touchstart)="onPowerSwitchChangeIII(7)" (touchend)="stop()"><ion-icon name="md-arrow-round-forward"></ion-icon></ion-fab-button>
+  <ion-fab-button class="button4" color="0"(touchstart)="onPowerSwitchChangeIII(3)" (touchend)="stop()"><ion-icon name="md-arrow-round-down"></ion-icon></ion-fab-button>
+</ion-grid> 
+<footer>
+
+  <button mat-raised-button color="accent" (click)="goBack()">Back to scan</button>
+
+</footer>

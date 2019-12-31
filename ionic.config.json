@@ -1,0 +1,7 @@
+{
+  "name": "Iot",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
