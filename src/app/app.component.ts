@@ -10,6 +10,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  title = 'Ionic crud Core 1';
+  links = [
+    { path: '/', icon: 'home', title: 'Home'},
+    { path: '/projects', icon: 'work', title: 'Projects'},
+  ]
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,

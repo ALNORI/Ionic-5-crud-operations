@@ -5,7 +5,7 @@ import { DetailPage } from '../detail/detail.page';
 import { Router, NavigationExtras } from '@angular/router';
 import { DataService } from '../data.service';
 import { ɵConsole } from '@angular/core';
-// import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
+// Nedan CRUD moduler
 
 
 @Component({
@@ -23,25 +23,28 @@ export class HomePage implements OnInit {
     { val: 'Mushroom', isChecked: false }
   ];
   devices: any[] = [];
+
   statusMessage: string;
 
   constructor(private toastCtrl: ToastController,
               private ble: BLE,
               public dataService: DataService,
               private ngZone: NgZone,
-              private router: Router,
-              public navCtrl: NavController
-              /* private screenOrientation: ScreenOrientation */
+              public navCtrl: NavController,
+              public router: Router
+         
              ) {
 
 
   }
 ngOnInit() {
+ 
 }
   ionViewDidEnter() {
     console.log('ionViewDidEnter');
     this.scan();
   }
+
 
   scan() {
     this.setStatus('Scanning for Bluetooth LE Devices');

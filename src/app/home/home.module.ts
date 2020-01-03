@@ -4,15 +4,19 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from './../material/material.module';
-
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HomePage } from './home.page';
 
 @NgModule({
   imports: [
+    IonicModule,
     CommonModule,
     FormsModule,
     IonicModule,
     MaterialModule,
+    ScrollingModule,
+    DragDropModule,
     RouterModule.forChild([
       {
         path: '',

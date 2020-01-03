@@ -13,7 +13,6 @@ import {
   MatSliderModule,
   MatSlideToggleModule,
   MatMenuModule,
-  MatSidenavModule,
   MatToolbarModule,
   MatListModule,
   MatGridListModule,
@@ -30,6 +29,7 @@ import {
   MatTooltipModule,
   MatSnackBarModule,
   MatTableModule,
+  MatSidenavModule,
   MatSortModule,
   MatPaginatorModule
 } from '@angular/material';
